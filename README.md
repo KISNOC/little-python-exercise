@@ -1,1 +1,1 @@
-# the_right_price
+# little-python-exercise
