@@ -1,17 +1,23 @@
-# This is a sample Python script.
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("Devinez le juste prix ! Le prix est compris entre 0 et 10 inclus.")
 
+secretNumber = random.randint(0, 10)
+userNumber = -1
+trials = 0
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script..
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while (True):
+    try:
+        userNumber = input()
+        userNumber = int(userNumber)
+        trials+=1
+        if userNumber < secretNumber:
+            print("Le juste prix est plus haut")
+        if userNumber > secretNumber:
+            print("Le juste prix est plus bas")
+        if userNumber == secretNumber:
+            print("Félicitations, vous avez trouvé le juste prix ", secretNumber, " en ", trials, " essais !")
+            print("Partie terminée")
+            break
+    except ValueError:
+        print("Entrer un nombre entier !")
