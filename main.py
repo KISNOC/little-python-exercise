@@ -3,11 +3,15 @@ print("║              Quelque exercice voulez-vous lancer ?            ║")
 print("╠════╦══════════════════════════════════════════════════════════╣")
 print("║  1 ║ The Right Price                                          ║")
 print("║  2 ║ Pierre Papier Ciseaux                                    ║")
+print("║  3 ║ Recherche Dichotomique                                   ║")
 print("╚════╩══════════════════════════════════════════════════════════╝")
 
+#choix = int(input())
+choix = 3
 
-choix = int(input())
 if choix == 1:
     from theRightPrice import theRightPrice
-if choix == 2:
+elif choix == 2:
     from pierrePapierCiseaux import pierrePapierCiseaux
+elif choix == 3:
+    from rechercheDichotomique import rechercheDichotomique
