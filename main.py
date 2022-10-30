@@ -17,4 +17,4 @@ elif choix == 2:
 elif choix == 3:
     from rechercheDichotomique import rechercheDichotomique
 elif choix == 4:
-    from rechercheDichotomique import rechercheDichotomique
+    from SystemCombat import game
